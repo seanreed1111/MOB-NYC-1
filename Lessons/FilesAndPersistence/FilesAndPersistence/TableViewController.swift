@@ -10,6 +10,8 @@ import UIKit
 
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+
     var items: [String] = ["one", "two", "three"]
     override func viewDidLoad() {
         super.viewDidLoad()

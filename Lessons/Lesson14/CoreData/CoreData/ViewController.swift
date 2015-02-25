@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
     override func viewDidAppear(animated: Bool) {
         if let moc = appDelegate.managedObjectContext {
             let fetch = NSFetchRequest(entityName: "Animal")
