@@ -6,15 +6,15 @@ import XCPlayground
 // Let asynchronous code run
 XCPSetExecutionShouldContinueIndefinitely()
 
-
-if let url = NSURL(string: "http://google.com") {
-    let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
-        println(response)
-        var string = NSString(data: data, encoding: NSUTF8StringEncoding)
-        println(string)
-    })
-    task.resume()
-}
+//
+//if let url = NSURL(string: "http://google.com") {
+//    let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
+//        println(response)
+//        var string = NSString(data: data, encoding: NSUTF8StringEncoding)
+//        println(string)
+//    })
+//    task.resume()
+//}
 
 if let url = NSURL(string: "http://www.reddit.com/.json") {
     let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
